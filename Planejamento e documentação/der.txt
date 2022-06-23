@@ -1,0 +1,37 @@
+usuário
+	id_usuario
+	categoria
+	login	
+	senha
+	email
+	(depois)certificado
+
+instituição
+	id_inst
+	nome
+	endereco
+	cursos
+	professores
+	ultimaalteração
+curso
+	id_curso
+	nome
+	materias
+	(depois) professores a quem procurar na sua instituição para perguntas
+	ultimaalteração
+	
+materia
+	id_matéria
+	módulo
+	nome
+	curso
+	tópicos
+	subtópicos
+	link	
+	arquivos
+	ultimaalteração
+	
+	
+	
+
+	
