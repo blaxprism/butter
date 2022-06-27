@@ -1,0 +1,45 @@
+
+
+body {
+  background-color: lightblue;
+  font-family: Sans-Serif;
+}
+header {
+  background-color: Black;
+  padding-top: 2%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.topo {
+  color: white;
+  position: relative;
+  left: 2%;
+}
+.botao {
+  color: gray;
+}
+
+/*Tamanho do alert*/
+      .alert{
+        padding: 20px;
+        color: #000000;
+        cursor: default;
+        width: 100px;
+        height: 100px;
+
+      }
+/*Botão de fechar*/
+      .closebtn{
+        margin-right: 15px;
+        color: #56a7d6;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+
+      }
+
+.formlibras{
+	position: relative;
+	bottom: 2%;
+}
