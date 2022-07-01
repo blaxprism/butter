@@ -12,17 +12,20 @@
     </div>
     
   <?php
-        $texto = $_POST["textotraduzir"];
-        $separado = explode(" ",$texto);
-        echo  "<script>alert('Email enviado com Sucesso!);</script>";
+        $texto = strtolower($_POST["textotraduzir"]);// pegar o input
+        $separado = str_split($texto);//soletrar em array
           
-        //ultimo array end($separado)
-        for ($i=0; $separado[$i] != "" ; $i++) { 
-          //caminho
-          $img = "dicionario/".$separado[$i].".png";
-          //pegar do dicionario
-          echo "<img src='$img' alt='tradução' height='100%' width='50%'>";
-          echo "<br>";
+        //loop pra exibir a tradução
+        for ($i=0; $separado[$i] != "" ; $i++) {           
+          if ($separado[$i] == " " ||$separado[$i] == "," ) {
+            echo "<img src='../lib/branco.png' alt='tradução' height='100%' width='50%'>";
+            
+          }else{
+          $img = "../lib/".$separado[$i].".png";//caminho
+              //pegar do dicionario
+              echo "<img src='$img' alt='tradução' height='100%' width='50%'>";
+              
+          }
         }
 
     ?>
