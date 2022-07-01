@@ -40,7 +40,7 @@
 
 
        <main class="o-main">
-             <h2 class="topo" style="color: white">   Materiais Extras   </h1>	
+             <h2 class="topo" style="color: white">   Materiais Extras   </h2>	
 
 
 
