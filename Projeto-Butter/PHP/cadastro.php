@@ -10,7 +10,7 @@
     <h1 class="topo" style="color: white">|logo| Nome do site</h1>
   </header>
   
-  <form action="../PHP/cadastro.php" method="POST">
+  <form action="cadastrot.php" method="POST">
     <label for="email">E-mail: </label><br/>
     <input type="email" name="email" id="email"/>
     <br />
@@ -27,7 +27,7 @@
       <label for="adm">Administrador</label><br/>
       <input type="radio" value="basic" name="categoria" id="basic"/>
       <label for="basic">Básico</label><br/>
-    <input type="submit" name="Entrar" value="Entrar" />
+    <input type="submit" name="Entrar" id="Entrar" />
   </form>
   
 

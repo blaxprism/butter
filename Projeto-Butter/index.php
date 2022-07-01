@@ -25,13 +25,16 @@
 </head>
 	<body>
 		<header>
-			<h1 class="topo" style="color: white">|logo| Nome do site</h1>
+			<center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> Lorem ipsum </h1></center>
 		    
 			<button class="botao" type="button">
 				<a href="PHP/login.php">login</a>
 			</button>
 			<button class="botao" type="button">
 				<a href="PHP/cadastro.PHP">cadastro</a>
+			</button>
+			<button class="botao" type="button">
+				<a href="PHP/exibir.php">Exibir</a>
 			</button>
 		</header>
 
