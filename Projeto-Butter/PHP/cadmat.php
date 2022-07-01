@@ -12,8 +12,10 @@
           header("login.php");
         }
 	?>
-  <header>
+  <header> 
+   <a href="../index.php">
     <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> Lorem ipsum </h1></center>
+	 </a>
   </header>
   
   <form action="cadmat2" method="POST">

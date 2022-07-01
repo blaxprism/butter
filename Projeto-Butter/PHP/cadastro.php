@@ -7,7 +7,9 @@
 </head>
 <body>
   <header>
-    <h1 class="topo" style="color: white">|logo| Nome do site</h1>
+    <a href="../index.php">
+    <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> Lorem ipsum </h1></center>
+   </a>
   </header>
   
   <form action="cadastrot.php" method="POST">
