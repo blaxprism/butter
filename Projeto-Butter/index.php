@@ -40,14 +40,14 @@
 
 
        <main class="o-main">
-             <h2 class="topo" style="color: white">   Materiais Extras   </h2>	
+             <h2 class="topo" style="color: white">   Materiais Extras   </h1>	
 
 
 
 
         </main>
 
-       <footer class="o-footer">
+        <footer class="o-footer">
 		<p align= "justify">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -74,7 +74,6 @@
 
 		<input type="button" name="alert" id="alert" value="libras" onClick="javascript: abrir();"/>
 		<br/>
-	  </footer>    
+		</footer>    
 	</body>
-</head>	
 </html>
