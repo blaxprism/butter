@@ -1,22 +1,57 @@
 
 
 body {
-  background-color: lightblue;
+  background-color: white;
   font-family: Sans-Serif;
+  display: grid;
+  grid-template-areas:
+    "header main main"
+    "footer main main"
+    "footer main main";
 }
 header {
-  background-color: Black;
+  background-color: #75BABD;
   padding-top: 2%;
   padding-right: 0;
   padding-left: 0;
 }
+
+
+main {
+   background-color: #B9E4E6;
+  padding-top: 0%;
+  padding-right: 30%;
+  padding-left: 20%;
+}
+
+footer {
+  background-color: white;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 0;
+
+}
+
+
+.o-header {
+  grid-area: header;
+}
+
+.o-main {
+  grid-area: main;
+}
+
+.o-footer {
+  grid-area: footer;
+}
+
 .topo {
   color: white;
   position: relative;
   left: 2%;
 }
 .botao {
-  color: gray;
+  color: #99CFD1;
 }
 
 /*Tamanho do alert*/
@@ -40,6 +75,6 @@ header {
       }
 
 .formlibras{
-	position: relative;
-	bottom: 2%;
+  position: relative;
+  bottom: 2%;
 }
