@@ -76,4 +76,5 @@
 		<br/>
 	  </footer>    
 	</body>
+</head>	
 </html>
