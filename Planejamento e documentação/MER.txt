@@ -1,0 +1,17 @@
+Matéria tem vários tópicos
+tópico tem vários links
+alteração tem registro 
+usuário tem login
+usuário tem nivel
+usuário tem senha
+usuário tem nome
+usuário tem email
+registro tem conteudo
+registro tem data e hora
+registro tem campo
+
+matéria 1 - n tópicos (chave)
+tópicos 1 - n links(chave)
+registro (chave)1 - 1 usuário
+
+
