@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23-Jul-2022 às 04:00
+-- Tempo de geração: 26-Jul-2022 às 06:24
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.26
 
@@ -40,7 +40,9 @@ CREATE TABLE `curso` (
 
 INSERT INTO `curso` (`id_curso`, `curso`) VALUES
 (1, 'Ensino médio integrado ao Técnico em informática para Internet'),
-(2, 'Logística');
+(2, 'Logística'),
+(3, 'Admnistração'),
+(4, 'Libras');
 
 -- --------------------------------------------------------
 
@@ -136,7 +138,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id_usuario`, `login`, `senha`, `nivel`, `nome`, `email`) VALUES
-(1, 'Blaxprism', '@Magico10', 2, 'Fá', 'Fabricio.jose426@gmail.com');
+(1, 'Blaxprism', '0d64593f5487d0bd5a615b316b50f9d3', 2, 'Fá', 'Fabricio.jose426@gmail.com');
 
 --
 -- Índices para tabelas despejadas
@@ -190,7 +192,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `curso`
 --
 ALTER TABLE `curso`
-  MODIFY `id_curso` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_curso` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `links`
