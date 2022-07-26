@@ -23,20 +23,47 @@
 		}
 	</script>
 </head>
-		<header class="o-header">
-			<div class="img"></div>
-			<center><h1 class="topo"></h1>C.E.E</h1></center>
-		    
-			<button class="botao" type="button">
-				<a href="PHP/login.php">login</a>
-			</button>
-			<button class="botao" type="button">
-				<a href="PHP/cadastro.PHP">cadastro</a>
-			</button>
-			<button class="botao" type="button">
-				<a href="PHP/exibir.php">Exibir</a>
-			</button>
-		</header>
+
+	<header class="o-header">
+		<div class="img"></div>
+		<center><h1 class="topo"></h1>C.E.E</h1></center>
+	    
+		<?php
+			// começar ou retomar uma sessão
+			session_start();
+			//se estiver logado
+			if (isset($_SESSION['logged']) && $_SESSION['logged'] == true) {
+				echo "
+				<button class='botao' type='button'>
+					<a href='PHP/exibir.php'>Exibir</a>
+				</button>
+				<button class='botao' type='button'>
+					<a href='PHP/caditens.php'>cadastrar itens</a>
+				</button>
+				<button class='botao' type='button'>
+					<a href='PHP/sair.php'>Sair</a>
+				</button>";
+			//se tiver tentado fazer login e dado um erro
+			}elseif(isset($_SESSION['falha']) && $_SESSION['falha'] == true){
+				echo "
+				<button class='botao' type='button'>
+					<a href='PHP/login.php'>Login</a>
+				</button>
+				<button class='botao' type='button'>
+					<a href='PHP/cadastro.php'>Cadastro</a>
+				</button>";
+			//se não tiver tentado fazer o login
+			}else{
+				echo "
+				<button class='botao' type='button'>
+					<a href='PHP/login.php'>Login</a>
+				</button>
+				<button class='botao' type='button'>
+					<a href='PHP/cadastro.php'>Cadastro</a>
+				</button>";
+			}
+		?>
+	</header>
 
 
        <main class="o-main">

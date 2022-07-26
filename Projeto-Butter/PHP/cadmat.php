@@ -6,30 +6,23 @@
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-	<?php
-		session_start();
-	  	if (!$_SESSION['logged']==1) {
-          header("login.php");
-        }
-	?>
-  <header> 
-   <a href="../index.php">
-    <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> C.E.E </h1></center>
-	 </a>
+  <header>
+    <a href="../index.php">
+    <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> Lorem ipsum </h1></center>
+    </a>
   </header>
-  
-  <form action="cadmat2" method="POST">
-    <label for="nomem"> Nome da matéria </label><br/>
-    <input type="text" name="nomem" id="nomem"/>
-    <br />
-    <label for="topic"> tópico </label><br/>
-    <input type="text" name="topic" id="topic"/>
-    <br />
-    <label for="link"> link </label><br/>
-    <input type="text" name="link" id="link"/>
-    <br />
-    <input type="submit" name="Entrar"/>
-  </form>
+  <?php
+    session_start();
+    if (!$_SESSION['logged']==1) {
+        header("login.php");
+    }
+    include("conectar.php");
+    $topic = $_POST['topic'];
+    $mat = $_POST['nomem'];
+    $link = $_POST['link'];
+    mysqli_query($conexao, "insert into links(topic, link, mat) values ('$topic','$link','$mat')");
+
+  ?>
   
 
 </body>

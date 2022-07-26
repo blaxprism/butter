@@ -5,6 +5,10 @@
 	<title></title>
 </head>
 <body>
+	<?php
+		// começar ou retomar uma sessão
+		session_start();
+	?>
 	<!-- botao de fechar -->
 	<div class="alert"> 
         <span class="closebtn" onClick="window.frameElement.parentElement.style.display='none';">&times;</span>

@@ -5,6 +5,9 @@
     <title></title>
   </head>
   <body>
-    
+    <?php
+      // começar ou retomar uma sessão
+      session_start();
+    ?>
   </body>
 </html>
