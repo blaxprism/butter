@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title >Nome do site</title>
+	<title >Projeto ED</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="CSS/estilos.css">
 	<script language="javascript">
@@ -26,7 +26,7 @@
 
 	<header class="o-header">
 		<div class="img"></div>
-		<center><h1 class="topo"></h1>C.E.E</h1></center>
+		<center><h1 class="topo">Projeto ED</h1></center>
 	    
 		<?php
 			// começar ou retomar uma sessão
@@ -55,6 +55,9 @@
 			//se não tiver tentado fazer o login
 			}else{
 				echo "
+				<button class='botao' type='button'>
+					<a href='PHP/exibir.php'>Exibir</a>
+				</button>
 				<button class='botao' type='button'>
 					<a href='PHP/login.php'>Login</a>
 				</button>

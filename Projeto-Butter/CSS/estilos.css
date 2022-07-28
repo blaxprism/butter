@@ -2,7 +2,7 @@
 body {
   background-color: white;
   font-family: Sans-Serif;
-  display: grid;
+  display: inline;
   grid-template-areas:
     "header main main"
     "footer main main"
@@ -40,8 +40,8 @@ footer {
 }
 
 .o-footer {
-  grid-area: footer;
-}
+  margin-right: auto;
+  margin-left: auto;}
 
 .topo {
   color: white;

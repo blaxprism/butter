@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>C.E.E</title>
+  <title>Projeto ED</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -20,7 +20,7 @@
   ?>
   <header header class="o-header">
     <a href="../index.php">
-    <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> C.E.E </h1></center>
+    <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> Projeto ED </h1></center>
    </a>
   </header>
   

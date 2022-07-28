@@ -18,7 +18,7 @@
 	?>
   <header> 
    <a href="../index.php">
-    <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> C.E.E </h1></center>
+    <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> Projeto ED </h1></center>
 	 </a>
   </header>
   

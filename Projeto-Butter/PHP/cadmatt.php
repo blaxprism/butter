@@ -8,7 +8,8 @@
 				include("conectar.php");
 				$curso = $_POST['curso'];
 				$user = $_POST['user'];
-				mysqli_query($conexao, "insert into curso(curso) values ('$curso')");
+				$mat = $_POST['mat'];
+				mysqli_query($conexao, "insert into materia(id_curso,materia) values('$curso','$mat')");
 				header("location: login.php");
 
 			}else{

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>C.E.E</title>
+  <title>Projeto ED</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -21,14 +21,14 @@
   ?>
   <header header class="o-header">
     <a href="../index.php">
-    <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> C.E.E </h1></center>
+    <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> Projeto ED </h1></center>
    </a>
   </header>
   
   <footer class="o-footer">
   <form action="cadcursot.php" method="POST">
     <label for="curso">Curso</label><br/>
-    <input type="text" name="curso" id="curso"/>
+    <input type="text" required name="curso" id="curso"/>
     <br />
     <?php 
     echo "<input type='hidden' name='user' id='user' value='".$_SESSION['username']."'>"

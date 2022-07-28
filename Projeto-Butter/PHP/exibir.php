@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title >C.C.E</title>
+    <title >Projeto ED</title>
     <link rel="stylesheet" href="../css/estilos.css">
   </head>
   <body>
     <header header class="o-header">
       <a href="../index.php">
-      <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> C.E.E </h1></center>
+      <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> Projeto ED </h1></center>
       </a>
     </header>
   <footer class="o-footer">
@@ -16,12 +16,13 @@
     <?php
       // começar ou retomar uma sessão
       session_start();
+      //se tiver feito o login
       if (isset($_SESSION['logged']) && $_SESSION['logged'] == true) {
       //se tiver tentado fazer login e dado um erro
       }elseif(isset($_SESSION['falha']) && $_SESSION['falha'] == true){
-        header('location: ../index.php');
+      //se não tiver feito o login
       }else{
-        header('location: ../index.php');
+        
       }
     ?>
     <?php

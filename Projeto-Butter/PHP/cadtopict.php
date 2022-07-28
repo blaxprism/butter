@@ -3,12 +3,14 @@
 	session_start();
 	if (isset($_SESSION['logged']) && $_SESSION['logged'] == true) {
 		if ($_SESSION['nivel']==2) {
-			// Permissão admnistrativa
+			// nivel 2 -> Permissão admnistrativa
 			if (!empty($_POST)) {
 				include("conectar.php");
 				$curso = $_POST['curso'];
 				$user = $_POST['user'];
-				mysqli_query($conexao, "insert into curso(curso) values ('$curso')");
+				$mat = $_POST['mat'];
+				$topic = $_POST['topic'];
+				mysqli_query($conexao, "insert into topico(id_materia,topic) values('$mat','$topic')");
 				header("location: login.php");
 
 			}else{
