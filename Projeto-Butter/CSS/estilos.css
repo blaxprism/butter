@@ -6,11 +6,36 @@ body {
     "footer main main"
     "footer main main";
 }
+#divmaior{
+  width: 50%;
+}
+.linkheader{
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  background-color: lightblue;
+  display: inline;
+  width: 10%;
+  margin: 5px;
+  padding: 5px;
+}
+#corpo{
+  width: 97%;
+  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
 header {
   background-color: #75BABD;
-  padding-top: 2%;
-  padding-right: 0;
-  padding-left: 0;
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+  height: 70px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }
 
 
