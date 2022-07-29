@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26-Jul-2022 às 06:24
+-- Tempo de geração: 29-Jul-2022 às 04:09
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.26
 
@@ -39,9 +39,9 @@ CREATE TABLE `curso` (
 --
 
 INSERT INTO `curso` (`id_curso`, `curso`) VALUES
-(1, 'Ensino médio integrado ao Técnico em informática para Internet'),
-(2, 'Logística'),
-(3, 'Admnistração'),
+(1, 'Etim informática para internet'),
+(2, 'Etim logística'),
+(3, 'Etim Admnistração'),
 (4, 'Libras');
 
 -- --------------------------------------------------------
@@ -82,7 +82,8 @@ CREATE TABLE `materia` (
 
 INSERT INTO `materia` (`id_materia`, `id_curso`, `materia`) VALUES
 (1, 1, 'Matemática'),
-(2, 1, 'Português');
+(2, 1, 'Português'),
+(3, 1, 'Química');
 
 -- --------------------------------------------------------
 
@@ -116,7 +117,8 @@ CREATE TABLE `topico` (
 
 INSERT INTO `topico` (`id_topico`, `id_materia`, `topic`) VALUES
 (1, 1, 'Função Seno'),
-(2, 1, 'Função Cosseno');
+(2, 1, 'Função Cosseno'),
+(3, 1, 'Geometria plana');
 
 -- --------------------------------------------------------
 
@@ -192,19 +194,19 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `curso`
 --
 ALTER TABLE `curso`
-  MODIFY `id_curso` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_curso` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de tabela `links`
 --
 ALTER TABLE `links`
-  MODIFY `id_link` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_link` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `materia`
 --
 ALTER TABLE `materia`
-  MODIFY `id_materia` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_materia` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `registro`
@@ -216,7 +218,7 @@ ALTER TABLE `registro`
 -- AUTO_INCREMENT de tabela `topico`
 --
 ALTER TABLE `topico`
-  MODIFY `id_topico` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_topico` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
