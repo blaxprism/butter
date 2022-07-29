@@ -6,11 +6,6 @@
     <link rel="stylesheet" href="../css/estilos.css">
   </head>
   <body>
-    <header header class="o-header">
-      <a href="../index.php">
-      <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> Projeto ED </h1></center>
-      </a>
-    </header>
   <footer class="o-footer">
     <!--<details></details>-->
     <?php
@@ -24,6 +19,9 @@
       }else{
         
       }
+    ?>
+    <?php
+      include("headero.php");
     ?>
     <?php
       include("conectar.php");
@@ -48,7 +46,8 @@
             while($dadoslinks=mysqli_fetch_array($consultalinks)){
               $links = $dadoslinks['link'];
               echo "<a href='$links' target='_blank'> $links </a> <br/>";
-            }echo "<hr/>";
+              echo "<hr/>";
+            }
           }
         }
       }

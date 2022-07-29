@@ -17,11 +17,9 @@
       }else{
       }
     ?>
-    <header class="o-header">
-      <a href="../index.php">
-      <center><h1 class="topo"><img href="../IMAGENS/logo.png" height="50"/> Projeto ED </h1></center>
-     </a>
-    </header>
+    <?php
+      include("headero.php");
+    ?>
     
     <footer footer class="o-footer">
     <form action="logint.php" method="POST">

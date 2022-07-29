@@ -1,8 +1,6 @@
-
 body {
   background-color: white;
   font-family: Sans-Serif;
-  display: inline;
   grid-template-areas:
     "header main main"
     "footer main main"
@@ -17,7 +15,7 @@ header {
 
 
 main {
-   background-color: #B9E4E6;
+  background-color:#c2e9eb;
   padding-top: 0%;
   padding-right: 30%;
   padding-left: 20%;
@@ -26,7 +24,7 @@ main {
 footer {
   background-color: white;
   padding-top: 0%;
-  padding-right: 10%;
+  padding-right: 0%;
   padding-left: 0;
 
 }
@@ -54,7 +52,7 @@ footer {
 
 /*Tamanho do alert*/
       .alert{
-        padding: 20px;
+        /*padding: 20px;*/
         color: #000000;
         cursor: default;
         width: 100px;
