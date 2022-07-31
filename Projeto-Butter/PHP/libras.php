@@ -49,14 +49,16 @@
         <span class="closebtn" onClick="window.frameElement.parentElement.style.display='none';">&times;</span>
     </div>
     
-  <?php
+    <?php
+
+      if (isset($_POST['textotraduzir'])) {
         $texto = strtolower($_POST["textotraduzir"]);// pegar o input
         $separado = str_split($texto);//soletrar em array
           
         //loop pra salvar as imagens num array
         for ($i=0; $separado[$i] != "" ; $i++) {      
 
-          if ($separado[$i] == " " ||$separado[$i] == "," ) {
+          if (($separado[$i] == " " ||$separado[$i] == ",")) {
 
             $imagens[$i] = "<img src='../lib/branco.png' alt='tradução' height='100%' width='50%'>";
             
@@ -68,6 +70,7 @@
                 
           }
         }
+      
 
     ?>
 
@@ -81,7 +84,7 @@
           <?php
 
             //adicionar as imagens
-
+      
             $img = "../lib/".$separado[0].".png";//caminho
             $imagens[0] = "<img class='selected' src='$img' alt='tradução' height='100%' width='50%'>";
 
@@ -93,8 +96,8 @@
 
               <?php
 
-            }while ( $imagens[$x]);
-          
+            }while ($imagens[$x]);
+         
           ?>
 
 
@@ -129,7 +132,10 @@
 
         window.addEventListener("load", start)//start quando a janela estiver carregada
       </script>
-      
+      <?php
+      }else{
+
+      }?>
       </div>
 
   <br><br><br><br>
