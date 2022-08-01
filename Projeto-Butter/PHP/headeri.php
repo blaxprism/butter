@@ -1,6 +1,8 @@
 <header>
-	
-	<center><a href=".."><h1 style="display:inline;margin-left: auto; margin-right: auto;">Projeto ED</h1></a></center>
+	<h1 style="vertical-align: middle;">
+		<img src="IMAGENS/logo.png" height=70px" style="vertical-align: middle;text-align: left;"/>
+		Projeto ED
+	</h1>
 	<div class="divmaior">
 	<?php
 		//se estiver logado
@@ -41,5 +43,20 @@
 			</div>";
 		}
 	?>
+	<input type="button" name="alert" id="alert" value="libras" onClick="javascript: abrir();"/>
+		
+	<article id="corpo">
+		<article id="text">
+		
+		<div id="janela" style="display: none; position: relative;">
+			<iframe id="iframelibras" name="iframelibras" frameborder="3" height="50%" width="40%"></iframe>
+		</div>
+
+		<div id="formli" style="display: none; position: relative;">
+			<iframe id="iframelibras" name="iframetext" frameborder="3" height="60%" width="100%"></iframe>
+		</div>
+		</article>
+		
+	</article>
 	</div>
 </header>

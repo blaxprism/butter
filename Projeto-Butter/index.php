@@ -24,25 +24,10 @@
 	</script>
 </head>
 <body>
-	<article id="corpo">
 		<?php
 			// começar ou retomar uma sessão
 			session_start();
-			include("php/headeri.php");
+			include("PHP/headeri.php");
 		?>
-		<article id="text">
-		
-		<div id="janela" style="display: none; position: relative;">
-			<iframe id="iframelibras" name="iframelibras" frameborder="3" height="50%" width="40%"></iframe>
-		</div>
-
-		<div id="formli" style="display: none; position: relative;">
-			<iframe id="iframelibras" name="iframetext" frameborder="3" height="60%" width="100%"></iframe>
-		</div>
-
-		<input type="button" name="alert" id="alert" value="libras" onClick="javascript: abrir();"/>
-		</article>
-	</article>
-	<br/>
 </body> 
 </html>

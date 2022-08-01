@@ -1,6 +1,4 @@
 ﻿CSS
-login
-sair
 sistema de cadastro{
 cursos
 matérias
