@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title >Nome do site</title>
+    <title>Projeto ED</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../imagens/logo.png"/>
   </head>
   <body>
     <?php

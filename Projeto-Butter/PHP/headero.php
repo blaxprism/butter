@@ -1,4 +1,4 @@
-<header>
+<header style="border-left-style:none ;border-right-style: none;">
 	<h1 style="vertical-align: middle;">
 		<a href="..">
 			<img src="../IMAGENS/logo.png" height=70px style="vertical-align: middle;margin-right: 10px;"/>Projeto ED
@@ -10,37 +10,37 @@
 			if (isset($_SESSION['logged']) && $_SESSION['logged'] == true) {
 				echo "
 				<div class='linkheader'>
-					<a href='PHP/exibir.php'>Exibir</a>
+					<a href='exibir.php'>Exibir</a>
 				</div>
 				<div class='linkheader'>
-					<a href='PHP/caditens.php'>cadastrar itens</a>
+					<a href='caditens.php'>cadastrar itens</a>
 				</div>
 				<div class='linkheader'>
-					<a href='PHP/sair.php'>Sair</a>
+					<a href='sair.php'>Sair</a>
 				</div>";
 			//se tiver tentado fazer login e dado um erro
 			}elseif(isset($_SESSION['falha']) && $_SESSION['falha'] == true){
 				echo "
 				<div class='linkheader'>
-					<a href='PHP/exibir.php'>Exibir</a>
+					<a href='exibir.php'>Exibir</a>
 				</div>
 				<div class='linkheader'>
-					<a href='PHP/login.php'>Login</a>
+					<a href='login.php'>Login</a>
 				</div>
 				<div class='linkheader'>
-					<a href='PHP/cadastro.php'>Cadastro</a>
+					<a href='cadastro.php'>Cadastro</a>
 				</div>";
 			//se não tiver tentado fazer o login
 			}else{
 				echo "
 				<div class='linkheader'>
-					<a href='PHP/exibir.php'>Exibir</a>
+					<a href='exibir.php'>Exibir</a>
 				</div>
 				<div class='linkheader'>
-					<a href='PHP/login.php'>Login</a>
+					<a href='login.php'>Login</a>
 				</div>
 				<div class='linkheader'>
-					<a href='PHP/cadastro.php'>Cadastro</a>
+					<a href='cadastro.php'>Cadastro</a>
 				</div>";
 			}
 		?>

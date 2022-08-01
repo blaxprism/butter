@@ -4,6 +4,7 @@
   <title >Nome do site</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../imagens/logo.png"/>
 </head>
 <body>
 	<?php

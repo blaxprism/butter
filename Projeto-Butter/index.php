@@ -4,6 +4,7 @@
 	<title>Projeto ED</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="CSS/estilos.css">
+	<link rel="icon" href="imagens/logo.png"/>
 	<script language="javascript">
 		function abrir(){
 			document.getElementById('formli').style.display='';

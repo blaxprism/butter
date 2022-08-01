@@ -4,9 +4,10 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title >Projeto ED</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../imagens/logo.png"/>
+
   </head>
   <body>
-  <footer class="o-footer">
     <!--<details></details>-->
     <?php
       // começar ou retomar uma sessão
@@ -19,10 +20,13 @@
       }else{
         
       }
+
     ?>
+    <article style="border-style: solid;border-top-style: none;border-width: 1px;border-color: black;background-color: lightblue;border-radius: 3px;">
     <?php
       include("headero.php");
     ?>
+   
     <?php
       include("conectar.php");
       $consultacurso=mysqli_query($conexao,"SELECT * from curso");
@@ -52,7 +56,6 @@
         }
       }
     ?>
-    
-   </footer>  
+    </article> 
   </body>
 </html>

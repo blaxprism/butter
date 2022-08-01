@@ -3,44 +3,44 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Projeto ED</title>
+    <link rel="icon" href="../imagens/logo.png"/>
+    <style type="text/css">
+        /* slides */
+      .content{
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+        align-items: center;
+      }
 
-<style type="text/css">
-    /* slides */
-.content{
-  display: flex;
-  flex-direction: center;
-  justify-content: center;
-  align-items: center;
-}
+      #slides{
+        width: 80%;
+        max-width: 500px;
+        height: 37vw;
+        max-height: 100%;
+        top: 0px;
+        position: relative;
+      }
 
-#slides{
-  width: 80%;
-  max-width: 500px;
-  height: 37vw;
-  max-height: 100%;
-  top: 0px;
-  position: relative;
-}
+      #slides img{
+        opacity: 0;
+        position: absolute;
 
-#slides img{
-  opacity: 0;
-  position: absolute;
+        width: 100%;
+        height: 100%;
 
-  width: 100%;
-  height: 100%;
+        object-fit: cover;
 
-  object-fit: cover;
+        transition: opacity 800ms;
+        background: #d1e8f0;
+      }
 
-  transition: opacity 800ms;
-  background: #d1e8f0;
-}
+      #slides img.selected{
+        opacity: 1;
 
-#slides img.selected{
-  opacity: 1;
+      }
 
-}
-
-</style>
+    </style>
 
   </head>
   <body bgcolor="#d1e8f0">
